@@ -19,17 +19,4 @@ O objetivo deste repositório é tanto o de preservação digital (backup e rasc
 
 3. *checksum* adicional (o git já faz SHA1) para garantir integridade conforme padrões dos próprios cartórios. Hoje, com base no ICP-Brasil, adota-se o *SHA-256d* (double SHA 256). Você pode conferir por exemplo com o javascript-local da https://uniproof.com.br/#valide-hash
 
-## Outros problemas com o site
-
-O domínio `mj.gov.br` redireciona para `justica.gov.br`, o que sugere que realmente anda meio abandonado.
-
-Ao tentar o procedimento mais simples, `wget -c   http://portal.mj.gov.br/CartorioInterConsulta/consulta.do?action=baixarCSVTodosCartorios`, nos deparamos com o seguinte aviso:
-
-```
-https://portal.mj.gov.br/CartorioInterConsulta/consulta.do?action=baixarCSVTodosCartorios
-Resolvendo portal.mj.gov.br (portal.mj.gov.br)... 189.9.0.119
-Conectando-se a portal.mj.gov.br (portal.mj.gov.br)|189.9.0.119|:443... conectado.
-ERRO: não foi possível verificar o certificado de portal.mj.gov.br, emitido por “CN=GlobalSign Organization Validation CA - SHA256 - G2,O=GlobalSign nv-sa,C=BE”:
-  Não foi possível verificar localmente a autoridade do emissor.
-Para se conectar a portal.mj.gov.br de forma insegura, use "--no-check-certificate".
-```
+Demais preparos no [SQL](src/analise.sql).
