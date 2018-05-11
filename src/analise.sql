@@ -61,8 +61,9 @@ $f$ language SQL IMMUTABLE;
 
 
 -- == ==
-CREATE VIEW vw_cartorios_basico AS
-  SELECT "UF" uf, "CNPJ" cnpj, "CNS" cns,
+-- DROP VIEW vw_cartorios_basico cascade;
+CREATE or replace VIEW vw_cartorios_basico AS
+  SELECT "UF" uf, trim("CNPJ") cnpj, trim("CNS") cns,
     lower(trim("Nome Oficial",' ,.')) nome_oficial,
     trim("Município",' ,;.') municipio,  "CEP" cep, lower(trim("Homepage")) homepage,
     lib.brdate2isodate("Data de Instalação")::date as data_instalacao, -- falta sanitizar
@@ -75,36 +76,71 @@ CREATE VIEW vw_cartorios_basico AS
 -- -- -- -- --
 -- RELATORIOS:
 
-CREATE VIEW vw_cartorios_relat01_datas AS
+CREATE or replace VIEW vw_cartorios_relat01_datas AS
  SELECT distinct data_instalacao as data_instalacao
  FROM vw_cartorios_basico
  ORDER BY 1 desc
 ; -- 2012-11-19, 2012-11-09, 2012-09-19. Determinou 2013 como ano de referencia.
 
-CREATE VIEW vw_cartorios_relat02_atribs AS
+
+CREATE or replace VIEW vw_cartorios_relat02_atribs AS
   SELECT regexp_split_to_table(atribuicoes,';') as atribuicoes,
          count(*) as n
   FROM vw_cartorios_basico
   GROUP BY 1 ORDER BY 1
 ;
 
-CREATE VIEW vw_cartorios_relat03_areas AS
+CREATE or replace VIEW vw_cartorios_relat03_areas AS
   SELECT uf, replace(regexp_split_to_table(area_abrangencia,';'),'município de','') as area_abrangencia,
          count(*) as n
   FROM vw_cartorios_basico
   GROUP BY 1,2
   ORDER BY 3 desc, 1,2
 ;
+------
+
+CREATE or replace VIEW vw_cartorios_relat04_nonrepeat_v1 AS
+ SELECT cns, array_distinct_sort(array_agg(cnpj)) as cnpjs,
+        jsonb_agg(jsonb_build_object('cnpj',cnpj, 'uf',uf, 'cep',cep, 'atribuicoes',atribuicoes)) as info
+ FROM vw_cartorios_basico
+ group by 1,2 having count(*)>1
+ ORDER BY 1
+;
+----
+CREATE or replace VIEW vw_cartorios_relat04_nonrepeat_v2 AS
+  SELECT cns,  round(avg(1+length(regexp_replace(atribuicoes, '[^;]+', '','g')))) as atrib_len_avg,
+         count(*) n,
+         count(distinct cnpj) as cnpjs,
+         count(distinct cep) as ceps
+  FROM vw_cartorios_basico
+  group by 1 having count(*)>1
+  ORDER BY 1
+;
+
+CREATE or replace VIEW vw_cartorios_relat04_nonrepeat_v3 AS
+  SELECT cnpj, round(avg(1+length(regexp_replace(atribuicoes, '[^;]+', '','g')))) as atrib_len_avg,
+         count(*) n,
+         count(distinct cns) as cnss,
+         count(distinct cep) as ceps
+  FROM vw_cartorios_basico
+  group by 1 having count(*)>1
+  ORDER BY 1
+;
+
 
 -- -- -- -- --
 -- OUTPUT:
+
+COPY (select * from vw_cartorios_basico)
+  TO '/tmp/cartorios2013_basico.csv' HEADER CSV;
+
 COPY (select * from vw_cartorios_relat02_atribs)
   TO '/tmp/cartorios2013_relat02_atribs.csv' HEADER CSV;
 
 COPY (select uf, trim(substr(area_abrangencia,0,30)) area_abrangencia,
               sum(n) as n
       from vw_cartorios_relat03_areas
-      group by 1
+      group by 1,2
       having sum(n)>2
-      order by 2 desc, 1
+      order by 3 desc, 1,2
 ) TO '/tmp/cartorios2013_relat03_areas_multi.csv' HEADER CSV;
