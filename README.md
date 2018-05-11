@@ -2,7 +2,7 @@
 
 Todos os cartórios do Brasil
 
-O Ministério da Justiça (MJ) fornece em portal específico os dados supostamente atualizados, https://portal.mj.gov.br/CartorioInterConsulta/ .
+O Ministério da Justiça (MJ) fornece em portal específico os dados supostamente atualizados, https://portal.mj.gov.br/CartorioInterConsulta/ ... Mas **parou de atualizar em 2013**.
 
 As buscas do site atualmente não funcionam, e, como o CSV não tem URL de arquivo estático, ficamos preocupados de amanhã também não funcionar.
 
