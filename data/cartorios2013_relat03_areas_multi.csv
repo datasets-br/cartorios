@@ -1,0 +1,386 @@
+uf,area_abrangencia,n
+BA,"",64
+RJ,"",54
+SP,são paulo,47
+PR,"",37
+GO,"",27
+BA,salvador,26
+PR,curitiba,26
+RS,porto alegre,26
+AM,manaus,20
+PA,belém,20
+PB,joão pessoa,20
+GO,goiânia,19
+MG,belo horizonte,18
+PR,londrina,18
+PE,"",17
+CE,"",16
+RJ,rio de janeiro,16
+CE,fortaleza,14
+MA,são luís,13
+AC,rio branco,11
+MG,distrito de são sebastião do,11
+DF,distrito federal,10
+PB,campina grande,10
+SE,aracaju,10
+AL,maceió,9
+BA,vitória da conquista,9
+DF,todo o distrito federal,9
+GO,itumbiara,9
+MS,"",9
+PE,recife,9
+SP,campinas,9
+SP,santos,9
+BA,itabuna,8
+ES,vitória,8
+PR,cascavel,8
+RJ,cidade do rio de janeiro,8
+RO,porto velho,8
+RS,caxias do sul,8
+SC,florianópolis,8
+SP,santo andré,8
+BA,camaçari,7
+BA,juazeiro,7
+GO,anápolis,7
+MA,imperatriz,7
+MG,aimorés,7
+MG,distrito de santo antônio do,7
+MG,governador valadares,7
+MG,itabira,7
+MG,sabará,7
+PR,maringá,7
+PR,ponta grossa,7
+RJ,município do rio de janeiro,7
+RJ,niterói,7
+RJ,nova iguaçu,7
+SP,guarulhos,7
+SP,osasco,7
+SP,são caetano do sul,7
+BA,alagoinhas,6
+BA,ilhéus,6
+BA,itapetinga,6
+MG,almenara,6
+MG,alvinópolis,6
+MG,arcos,6
+MG,baependi,6
+MG,barbacena,6
+MG,botelhos,6
+MG,brumadinho,6
+MG,campina verde,6
+MG,carlos chagas,6
+MG,carmo do paranaíba,6
+MG,congonhas,6
+MG,conselheiro lafaiete,6
+MG,contagem,6
+MG,divinópolis,6
+MG,elói mendes,6
+MG,ervália,6
+MG,esmeraldas,6
+MG,guaranésia,6
+MG,joão monlevade,6
+MG,juiz de fora,6
+MG,manhuaçu,6
+MG,manhumirim,6
+MG,montes claros,6
+MG,monte sião,6
+MG,novo cruzeiro,6
+MG,ouro branco,6
+MG,paracatu,6
+MG,passa quatro,6
+MG,poços de caldas,6
+MG,pompéu,6
+MG,prados,6
+MG,ribeirão das neves,6
+MG,sacramento,6
+MG,santa luzia,6
+MG,são joão del rei,6
+MG,são sebastião do paraíso,6
+MG,sete lagoas,6
+MG,taiobeiras,6
+MG,teófilo otoni,6
+MG,ubá,6
+MG,uberlândia,6
+PE,caruaru,6
+PI,teresina,6
+RJ,1º,6
+RJ,petrópolis,6
+RS,rio grande,6
+SC,joinville,6
+SP,ribeirão preto,6
+SP,são bernardo do campo,6
+SP,são josé do rio preto,6
+AC,municípios de cruzeiro do sul,5
+BA,barreiras,5
+BA,candeias,5
+BA,feira de santana,5
+BA,jacobina,5
+CE,crato,5
+CE,juazeiro do norte,5
+CE,sobral,5
+ES,cachoeiro de itapemirim,5
+MG,águas vermelhas,5
+MG,barão de cocais,5
+MG,betim,5
+MG,cachoeira de minas,5
+MG,cambuquira,5
+MG,campanha,5
+MG,candeias,5
+MG,capelinha,5
+MG,carangola,5
+MG,cataguases,5
+MG,caxambu,5
+MG,cláudio,5
+MG,conceição do mato dentro,5
+MG,conquista,5
+MG,coronel fabriciano,5
+MG,diamantina,5
+MG,guapé,5
+MG,ipanema,5
+MG,itaguara,5
+MG,itamogi,5
+MG,jaíba,5
+MG,malacacheta,5
+MG,mariana,5
+MG,mateus leme,5
+MG,município do prata,5
+MG,municípios de alpinópolis e s,5
+MG,mutum,5
+MG,nepomuceno,5
+MG,ouro preto,5
+MG,peçanha,5
+MG,porteirinha,5
+MG,rio vermelho,5
+MG,sabinópolis,5
+MG,santa vitória,5
+MG,são joão da ponte,5
+MG,são tomás de aquino,5
+MG,virginópolis,5
+MS,campo grande,5
+PB,bayeux,5
+PB,sousa,5
+PE,olinda,5
+PR,apucarana,5
+PR,guarapuava,5
+PR,paiçandu,5
+PR,paranaguá,5
+PR,pinhais,5
+PR,toledo,5
+RJ,freguesia de inhaúma olaria c,5
+RN,"",5
+RS,novo hamburgo,5
+RS,pelotas,5
+RS,são leopoldo,5
+SC,"",5
+SC,aurora,5
+SC,itajaí,5
+SC,lages,5
+SP,araraquara,5
+SP,botucatu,5
+SP,guaratinguetá,5
+SP,jundiaí,5
+SP,lins,5
+SP,são josé dos campos,5
+SP,são vicente,5
+TO,gurupi,5
+TO,palmas,5
+AC,feijó,4
+AC,xapuri,4
+AL,arapiraca,4
+AL,cidade de maceió,4
+AL,penedo,4
+BA,anagé,4
+BA,boa vista do tupim,4
+BA,cachoeira,4
+BA,municípios de santo antônio d,4
+BA,quixabeira,4
+BA,riachão das neves,4
+CE,caucaia,4
+ES,aracruz,4
+ES,guarapari,4
+ES,são mateus,4
+GO,jaraguá,4
+GO,jataí,4
+GO,municípios de luziânia,4
+GO,rio verde,4
+GO,rubiataba,4
+MA,bacabal,4
+MG,abre campo,4
+MG,acaiaca,4
+MG,águas formosas,4
+MG,andradas,4
+MG,andrelândia,4
+MG,araguari,4
+MG,bambuí,4
+MG,barroso,4
+MG,belmiro braga,4
+MG,belo oriente,4
+MG,bocaina de minas,4
+MG,bom jardim de minas,4
+MG,cabo verde,4
+MG,cachoeira de pajeú e divisa a,4
+MG,caeté,4
+MG,campestre,4
+MG,campo azul,4
+MG,canápolis,4
+MG,caratinga,4
+MG,carmo do cajuru,4
+MG,carneirinho,4
+MG,carvalhos,4
+MG,central de minas,4
+MG,congonhal,4
+MG,conselheiro pena,4
+MG,cruzeiro da fortaleza,4
+MG,curvelo,4
+MG,delfim moreira,4
+MG,distrito de são sebastião da,4
+MG,divino,4
+MG,espera feliz,4
+MG,estrela do sul,4
+MG,ferros,4
+MG,guanhães,4
+MG,guaxupé,4
+MG,ibiá,4
+MG,ibiaí,4
+MG,indaiabira e curral de dentro,4
+MG,ingaí e itutinga,4
+MG,inhapim,4
+MG,itabirinha,4
+MG,itabirito,4
+MG,itajubá,4
+MG,itanhandu,4
+MG,itapecerica,4
+MG,ituiutaba,4
+MG,jacinto,4
+MG,jacuí,4
+MG,jampruca,4
+MG,japonvar,4
+MG,joão pinheiro,4
+MG,lagoa dos patos,4
+MG,leopoldina,4
+MG,liberdade,4
+MG,luislândia,4
+MG,machado,4
+MG,marmelópolis,4
+MG,matozinhos,4
+MG,medina,4
+MG,mendes pimentel,4
+MG,montalvânia,4
+MG,monte alegre de minas,4
+MG,monte belo,4
+MG,montezuma,4
+MG,municípios de ituiutaba e gur,4
+MG,municípios de itumirim,4
+MG,municípios de lima duarte,4
+MG,municípios de monte carmelo,4
+MG,municípios de pedra azul,4
+MG,municípios de perdões e cana,4
+MG,municípios de são gonçalo do,4
+MG,municípios de viçosa,4
+MG,muriaé,4
+MG,nova lima,4
+MG,nova resende,4
+MG,olaria e pedro teixeira,4
+MG,passa-vinte,4
+MG,pedralva,4
+MG,pescador,4
+MG,piumhi,4
+MG,poço fundo,4
+MG,ponte nova,4
+MG,pouso alegre,4
+MG,presidente olegário,4
+MG,rio doce,4
+MG,rio novo,4
+MG,rio paranaíba,4
+MG,rio piracicaba,4
+MG,salinas,4
+MG,são lourenço,4
+MG,serro,4
+MG,tiros,4
+MG,tombos,4
+MG,três marias,4
+MG,uberaba,4
+MG,unaí,4
+MG,varginha,4
+MG,várzea da palma,4
+MG,vazante,4
+MG,veredinha,4
+MS,dourados,4
+PB,areia,4
+PB,curral velho,4
+PB,diamante,4
+PB,guarabira,4
+PB,itabaiana,4
+PB,municípios de caiçara,4
+PB,municípios de cuité e nova fl,4
+PB,nova palmeira,4
+PB,pedra lavrada,4
+PB,princesa isabel,4
+PB,santa helena,4
+PB,triunfo,4
+PB,umbuzeiro,4
+PE,cabo de santo agostinho,4
+PE,limoeiro,4
+PI,floriano,4
+PI,municípios de parnaíba e ilha,4
+PR,assis chateaubriand,4
+PR,bandeirantes,4
+PR,campo mourão,4
+PR,capanema,4
+PR,cianorte,4
+PR,ibiporã,4
+PR,jacarezinho,4
+PR,maringa,4
+PR,municípios de união da vitóri,4
+PR,paranavaí,4
+PR,rolândia,4
+PR,são josé dos pinhais,4
+PR,umuarama,4
+RJ,maricá,4
+RJ,são gonçalo,4
+RS,alegrete,4
+RS,bagé,4
+RS,bento gonçalves,4
+RS,cruzeiro do sul,4
+RS,municípios de santiago,4
+RS,municípios de são gabriel e s,4
+RS,santo ângelo,4
+RS,são borja,4
+SC,águas mornas,4
+SC,alto bela vista,4
+SC,anitápolis,4
+SC,blumenau,4
+SC,brunópolis,4
+SC,joaçaba,4
+SC,laurentino,4
+SC,municípios de brusque,4
+SC,municípios de concórdia,4
+SC,municípios de tubarão e pedra,4
+SC,rio do oeste,4
+SP,americana,4
+SP,araçatuba,4
+SP,araras,4
+SP,bauru,4
+SP,bragança paulista,4
+SP,brejo alegre,4
+SP,caçapava,4
+SP,cruzeiro,4
+SP,cubatão,4
+SP,diadema,4
+SP,itapira,4
+SP,itu,4
+SP,jacareí,4
+SP,jaú,4
+SP,marília,4
+SP,mauá,4
+SP,moji das cruzes,4
+SP,municípios de campinas e paul,4
+SP,municípios de são josé do rio,4
+SP,pindamonhangaba,4
+SP,piracicaba,4
+SP,presidente prudente,4
+SP,rio claro,4
+SP,santa rosa de viterbo,4
+SP,sorocaba,4
+SP,suzano,4
+SP,taquaritinga,4
+TO,porto nacional,4
