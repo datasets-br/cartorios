@@ -107,25 +107,28 @@ CREATE or replace VIEW vw_cartorios_relat04_nonrepeat_v1 AS
  ORDER BY 1
 ;
 ----
-CREATE or replace VIEW vw_cartorios_relat04_nonrepeat_v2 AS
-  SELECT cns,  round(avg(1+length(regexp_replace(atribuicoes, '[^;]+', '','g')))) as atrib_len_avg,
+CREATE or replace VIEW vw_cartorios_relat04_repetidos_v2 AS
+  SELECT cns,
+         round(avg(1+length(regexp_replace(atribuicoes, '[^;]+', '','g')))) as atrib_len_avg,
          count(*) n,
          count(distinct cnpj) as cnpjs,
          count(distinct cep) as ceps
   FROM vw_cartorios_basico
   group by 1 having count(*)>1
-  ORDER BY 1
+  ORDER BY 3 desc, 1
 ;
 
-CREATE or replace VIEW vw_cartorios_relat04_nonrepeat_v3 AS
-  SELECT cnpj, round(avg(1+length(regexp_replace(atribuicoes, '[^;]+', '','g')))) as atrib_len_avg,
+CREATE or replace VIEW vw_cartorios_relat04_repetidos_v3 AS
+  SELECT cnpj,
+         round(avg(1+length(regexp_replace(atribuicoes, '[^;]+', '','g')))) as atrib_len_avg,
          count(*) n,
          count(distinct cns) as cnss,
          count(distinct cep) as ceps
   FROM vw_cartorios_basico
   group by 1 having count(*)>1
-  ORDER BY 1
-;
+  ORDER BY 3 desc, 1
+;  -- 13.100.722/0001-60 é o Tribunal de Justica do Estado da Bahia.
+   -- 09.444.530/0001-01 é o Tribunal de Justica do Estado do Ceara.
 
 
 -- -- -- -- --
@@ -144,3 +147,9 @@ COPY (select uf, trim(substr(area_abrangencia,0,30)) area_abrangencia,
       having sum(n)>2
       order by 3 desc, 1,2
 ) TO '/tmp/cartorios2013_relat03_areas_multi.csv' HEADER CSV;
+
+COPY (select * from vw_cartorios_relat04_repetidos_v2)
+  TO '/tmp/cartorios_relat04_repetidos_v2.csv' HEADER CSV;
+
+COPY (select * from vw_cartorios_relat04_repetidos_v3)
+  TO '/tmp/cartorios_relat04_repetidos_v3.csv' HEADER CSV;
