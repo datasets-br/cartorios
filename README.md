@@ -14,9 +14,9 @@ O objetivo deste repositório é tanto o de preservação digital (backup do min
 
 1. Baixar e zipar. Manualmente (via navegador) ou via <br/>`curl -k -H "User-Agent: Mozilla/5.0 (Linux)" https://portal.mj.gov.br/CartorioInterConsulta/consulta.do?action=baixarCSVTodosCartorios | gzip > Cartorios.fonte0.csv.gz`
 
-2. Criar a fonte UTF-8 mais universal e correta que a <br/>`gunzip -c Cartorios.fonte0.csv.gz | iconv -c  -t UTF-8  -f ISO-8859-1 > Cartorios~utf8.csv`
+2. Criar a fonte UTF-8 que é o padrão Brasil (ePING)<br/>`gunzip -c Cartorios.fonte0.csv.gz | iconv -c  -t UTF-8  -f ISO-8859-1 > Cartorios~utf8.csv`
 
-3. *checksum* adicional (o git já faz SHA1) para garantir integridade conforme padrões dos próprios cartórios. Hoje, com base no ICP-Brasil, adota-se o *SHA-256d* (double SHA 256). Você pode conferir por exemplo com o javascript da http://Uniproof.com.br
+3. *checksum* adicional (o git já faz SHA1) para garantir integridade conforme padrões dos próprios cartórios. Hoje, com base no ICP-Brasil, adota-se o *SHA-256d* (double SHA 256). Você pode conferir por exemplo com o javascript-local da https://uniproof.com.br/#valide-hash
 
 ## Outros problemas com o site
 
