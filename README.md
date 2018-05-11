@@ -2,13 +2,14 @@
 
 Todos os cartórios do Brasil
 
-O Ministério da Justiça (MJ) fornece em portal específico os dados supostamente atualizados, https://portal.mj.gov.br/CartorioInterConsulta/ ... Mas **parou de atualizar em 2013**.
-
+O Ministério da Justiça (MJ) fornece em portal específico os dados supostamente atualizados, https://portal.mj.gov.br/CartorioInterConsulta/ ... Mas **parou de atualizar em 2013**. 
 As buscas do site atualmente não funcionam, e, como o CSV não tem URL de arquivo estático, ficamos preocupados de amanhã também não funcionar.
 
-Apesar dos cartórios parecerem diferentes nos seus longos títulos, na verdade o título formal de deve ser lido como um agregado de *rótulos de especialidade*: cada cartório pode atender a uma ou várias especialidades.
+Hoje os dados parecem estar em http://www.cnj.jus.br/corregedoria/justica_aberta  , pode-se comparar com os dados antigos. Ver [apresentação e relatório](http://www.cnj.jus.br/transparencia/apresentacao/327-sobre-o-cnj/corregedoria/atos-administrativos-da-corregedoria/divulgacoes/12599-cadastro-das-serventias-extrajudiciais-estaticas) do Cadastro das Serventias Extrajudiciais.
 
-O objetivo deste repositório é tanto o de preservação digital (backup do ministério e rascreabilidade das mudanças), como o de organizar um pouco os seus dados, tais como nomes de cidade e, princopalmente, a desagregação e padronização dos *rótulos de especialidades*.
+Apesar dos cartórios parecerem diferentes, alguns com longos títulos designando o que fazem, eles podem ser  agregados por *rótulos de especialidade*, também ditas **atribuições**: cada cartório pode atender a uma ou várias atribuições.
+
+O objetivo deste repositório é tanto o de preservação digital (backup e rascreabilidade das mudanças desde 2013), como o de organizar um pouco os seus dados, tais como nomes de cidade e, princopalmente, a desagregação e padronização dos *rótulos de atribuição* e das jurisdições (áreas de serventia/abrangência).
 
 ## Preparo
 
